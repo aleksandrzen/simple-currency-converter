@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"  xml:lang="en" lang="en">
+    <head>
+        <link rel="shortcut icon"href="/img/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="/css/index.css<? echo '?v=2.0.6' . Zend_Registry::get('version');?>">
+        <script src="/js/jquery.min.js<? echo '?v=2.0.6' . Zend_Registry::get('version');?>"></script>
+        <script type="text/javascript" src="/js/index.js<? echo '?v=2.0.6' . Zend_Registry::get('version');?>"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <p class="instructions">Enter any numeric amount and select currencies from dropdown menus</p>
+            <input type="number" min = '0'  step= '10' class = 'amount input' id='curr_amount_in' placeholder='Amount to convert' />
+            <ul class='currencies input'>
+                <li class='RUB active'>Russian Ruble(RUB)</li>
+                <li class='EUR'>Euro(EUR)</li>
+                <li class='USD'>US Dollar(USD)</li>
+                <li class='GBP'>Great Britain Pound(GBP)</li>
+                <li class='JPY'>Japanese Yen(JPY)</li>
+                <li class='AUD'>Australian Dollar(AUD)</li>
+                <li class='ZAR'>South Africa Rand(ZAR)</li>
+            </ul>
+            <ul class='currencies output'>
+                <li class='EUR active'>Euro(EUR)</li>
+                <li class='RUB'>Russian Ruble(RUB)</li>
+                <li class='USD'>US Dollar(USD)</li>
+                <li class='GBP'>Great Britain Pound(GBP)</li>
+                <li class='JPY'>Japanese Yen(JPY)</li>
+                <li class='AUD'>Australian Dollar(AUD)</li>
+                <li class='ZAR'>South Africa Rand(ZAR)</li>
+            </ul>
+            <input type="number" readonly="readonly" min = '0'  step= '10' class = 'amount output' id='curr_amount_out' placeholder='Amount to convert' />
+            <input type="button" class="reflector" value="&#8646;"/>
+        </div>
+    </body>
+</html>

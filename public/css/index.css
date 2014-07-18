@@ -1,0 +1,105 @@
+@import url(../fonts/SourceSansPro);
+body{
+    background:#222;
+    font-family:'Source Sans Pro',Helvetica,Arial,sans-serif;
+    overflow:hidden;
+}
+.wrapper{
+    width:650px;
+    margin:0 auto;
+    position: relative;
+}
+.instructions{
+    width:100%;
+    height:40px;
+    font:18px/40px 'Source Sans Pro',Helvetica,Arial,sans-serif;
+    color:#4597d1;
+    text-align:center;
+}
+input{
+    width:385px;
+    height:50px;
+    font-size:30px;
+    float:left;
+    border:none;
+    background:rgba(255,255,255,0.1);
+    padding-left:20px;
+    margin-right:20px;
+    font-family:'Source Sans Pro',Helvetica,Arial,sans-serif;
+    color:#8ec2da;
+    box-sizing:border-box;
+}
+input:focus{
+    border:1px solid #f1e85b
+}
+.error{
+    border:2px solid red;
+}
+.reflector{
+    position: absolute;
+    top: 164px;
+    width: 100%;
+    text-align: center;
+}
+.submitter{
+    width: 100%;
+}
+.currencies{
+    list-style:none;
+    margin:0;
+    padding:0;
+    font-size: 24px;
+    position:absolute;
+    right:0;
+    max-height:50px;
+    overflow:hidden;
+    transition:all 0.5s ease-in-out;
+    z-index:10;
+}
+.output{
+    position: absolute;
+    top: 111px;
+}
+.currencies.output{
+    right: 388px;
+}
+.amount.output{
+    left: 265px;
+}
+.currencies li{
+    height:40px;
+    background:#4162a9;
+    margin-bottom:5px;
+    line-height:40px;
+    text-align:center;
+    padding:5px;
+    color:#f5fcd0;
+    cursor:pointer;
+    border-radius:5px;
+}
+.currencies li:hover{
+    background:#ee3b37;
+}
+.open{
+    max-height:600px;
+}
+.results{
+    float:left;
+    width:100%;
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+.results li{
+    width:100%;
+    height:30px;
+    line-height:30px;
+    background:rgba(0,0,0,0.2);
+    margin-top:10px;
+    font-size:25px;
+    border-radius:5px;
+    color:#f5fcd0;
+}
+.hide{
+    display:none;
+}
